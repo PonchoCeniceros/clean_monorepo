@@ -24,8 +24,8 @@ Este repositorio es un monorepo gestionado con Yarn Workspaces que contiene dos 
 
 El monorepo se organiza en la carpeta `project/`, donde cada subcarpeta es un workspace independiente.
 
--   `project/clean_backend`: Un servicio de backend que se encarga de la lógica de negocio, la API y la comunicación con la base de datos.
--   `project/clean_frontend`: Una aplicación de frontend que se encarga de la interfaz de usuario y la interacción con el cliente.
+-   `project/api`: Un servicio de backend que se encarga de la lógica de negocio, la API y la comunicación con la base de datos.
+-   `project/app`: Una aplicación de frontend que se encarga de la interfaz de usuario y la interacción con el cliente.
 
 ## Requisitos Previos
 
@@ -51,8 +51,8 @@ Este comando leerá los `package.json` de cada workspace y de la raíz, instalan
 
 Cada paquete tiene su propio archivo de variables de entorno. Deberás crearlos a partir de los archivos de ejemplo.
 
--   **Backend:** Copia `project/clean_backend/.env.example` a `project/clean_backend/.env` y ajusta las variables (puerto, URLs de bases de datos, secretos de JWT, etc.).
--   **Frontend:** Copia `project/clean_frontend/.env.example` a `project/clean_frontend/.env` y configura la URL del backend (`VITE_API_URL`).
+-   **Backend:** Copia `project/api/.env.example` a `project/api/.env` y ajusta las variables (puerto, URLs de bases de datos, secretos de JWT, etc.).
+-   **Frontend:** Copia `project/app/.env.example` a `project/app/.env` y configura la URL del backend (`VITE_API_URL`).
 
 ### 3. Ejecutar los Proyectos en Modo Desarrollo
 
@@ -61,13 +61,13 @@ Para ejecutar un script de un workspace específico, se utiliza el comando `yarn
 **Para iniciar el backend:**
 
 ```bash
-yarn workspace clean_backend dev
+yarn workspace api dev
 ```
 
 **Para iniciar el frontend:**
 
 ```bash
-yarn workspace clean_frontend dev
+yarn workspace app dev
 ```
 
 ## Manejo de Dependencias en Workspaces
@@ -76,14 +76,14 @@ yarn workspace clean_frontend dev
 
 ```bash
 # Ejemplo: añadir axios solo al frontend
-yarn workspace clean_frontend add axios
+yarn workspace app add axios
 ```
 
 **Añadir una dependencia de desarrollo a un workspace específico:**
 
 ```bash
 # Ejemplo: añadir jest solo al backend
-yarn workspace clean_backend add jest -D
+yarn workspace api add jest -D
 ```
 
 **Añadir una dependencia a la raíz (para todos los workspaces):**

@@ -5,10 +5,10 @@
     "project/*"
   ],
   "scripts": {
-    "dev": "concurrently --names \"Api,App\" 'yarn workspace clean_api dev' 'yarn workspace clean-frontend dev'",
+    "dev": "concurrently --names "Api,App" 'yarn workspace api dev' 'yarn workspace app dev'",
     "build": "yarn workspaces run build",
-    "start:backend": "yarn workspace clean_api start",
-    "start:frontend": "yarn workspace clean-frontend preview"
+    "start:backend": "yarn workspace api start",
+    "start:frontend": "yarn workspace app preview"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
