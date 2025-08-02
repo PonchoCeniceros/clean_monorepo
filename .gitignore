@@ -34,5 +34,5 @@ yarn.lock
 package-lock.json
 
 # .env
-./project/clean_backend/.env
-./project/clean_frontend/.env
+./project/api/.env
+./project/app/.env
