@@ -2,6 +2,7 @@
   <img src="https://github.com/PonchoCeniceros/clean_monorepo/blob/main/project/app/src/assets/main.svg" width="500">
 </p>
 
+
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=for-the-badge">
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge">
@@ -232,4 +233,4 @@ en proceso de desarrollo...
 
 *   [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Robert C. Martin (Uncle Bob)
 *   [explicit architecture: ddd, hexagonal, onion, clean](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/)
-
+versión 0.0.1
