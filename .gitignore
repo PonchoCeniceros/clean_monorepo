@@ -36,3 +36,6 @@ package-lock.json
 # .env
 ./project/api/.env
 ./project/app/.env
+
+# TypeScript build info
+tsconfig.tsbuildinfo
