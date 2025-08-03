@@ -16,7 +16,7 @@
 
 El presente proyecto es un template para una aplicación fullstack construida con TypeScript, Node.js, MongoDB y Express (backend) así como React, Vite y Tailwind CSS (frontend) de forma minimalista y moderna, siguiendo los principios de Arquitectura Limpia. La estructura del proyecto está organizada por funcionalidades para promover la co-ubicación del código y facilitar la mantenibilidad, y está diseñado para ser robusto, escalable y fácil de mantener.
 
-### Filosofía
+## Filosofía
 
 *   **Minimalista:** Solo lo esencial para empezar. Sin librerías o componentes innecesarios.
 *   **Moderno:** Utiliza herramientas modernas como Vite para una experiencia de desarrollo rápida.
@@ -26,7 +26,7 @@ El presente proyecto es un template para una aplicación fullstack construida co
 *   **Enfocado en el Dominio:** La lógica de negocio es el núcleo de la aplicación y no se ve afectada por cambios en frameworks o tecnologías externas.
 
 
-### Estructura
+## Estructura
 
 El template se organiza en la carpeta `project/`, donde cada subcarpeta es un workspace independiente.
 
@@ -34,7 +34,7 @@ El template se organiza en la carpeta `project/`, donde cada subcarpeta es un wo
 -   `project/app`: Una aplicación de frontend que se encarga de la interfaz de usuario y la interacción con el cliente.
 
 
-#### Arquitectura Limpia
+### Arquitectura Limpia
 
 Este proyecto sigue los principios de la Arquitectura Limpia para separar las responsabilidades y mejorar la mantenibilidad. La dependencia fluye de las capas externas a las internas.
 
@@ -124,9 +124,9 @@ Y en cuestión de la implementación limpia:
 | **Aplicación**<br>(El "Cómo") | Orquesta los casos de uso, conectando el dominio con la infraestructura a través de interfaces. | - `src/features/auth/services.ts`<br>- `src/features/auth/hooks/useLogin.ts` |
 | **Infraestructura**<br>(El "Con Qué") | Contiene los detalles técnicos y las implementaciones concretas de las interfaces. | - `src/features/auth/services/api.ts`<br>- `src/features/auth/components/`<br>- `src/components/`<br>- `src/store/session.ts`<br>- `src/main.tsx` |
 
-### Cómo Empezar
+## Cómo Empezar
 
-#### 1. Instalación de Dependencias
+### 1. Instalación de Dependencias
 
 Para instalar todas las dependencias de todos los paquetes (workspaces), ejecuta el siguiente comando **desde la raíz del proyecto**:
 
@@ -136,7 +136,7 @@ yarn install
 
 Este comando leerá los `package.json` de cada workspace y de la raíz, instalando todo lo necesario.
 
-#### 2. Configuración de Variables de Entorno
+### 2. Configuración de Variables de Entorno
 
 Cada paquete tiene su propio archivo de variables de entorno. Deberás crearlos a partir de los archivos de ejemplo.
 
@@ -178,7 +178,7 @@ Cada paquete tiene su propio archivo de variables de entorno. Deberás crearlos 
 -   **Frontend:** Copia `project/app/.env.example` a `project/app/.env` y configura la URL del backend (`VITE_API_URL`).
 
 
-#### 3. Ejecutar los Proyectos en Modo Desarrollo
+### 3. Ejecutar los Proyectos en Modo Desarrollo
 
 Para ejecutar un script de un workspace específico, se utiliza el comando `yarn workspace <nombre_del_workspace> <script>`.
 
@@ -194,7 +194,7 @@ yarn workspace api dev
 yarn workspace app dev
 ```
 
-### Manejo de Dependencias en Workspaces
+## Manejo de Dependencias en Workspaces
 
 **Añadir una dependencia a un workspace específico:**
 
@@ -219,10 +219,10 @@ yarn add prettier -W -D
 
 -   La bandera `-W` (o `--ignore-workspace-root-check`) permite añadir la dependencia a la raíz del proyecto.
 
-### Docker (Backend)
+## Docker (Backend)
 en proceso de desarrollo...
 
-### Puntos Clave a Recordar
+## Puntos Clave a Recordar
 
 1.  **Comandos desde la Raíz:** Ejecuta siempre `yarn install` y los comandos `yarn workspace ...` desde la raíz del monorepo.
 2.  **Dependencias Hoisted:** Yarn intentará "elevar" (hoist) las dependencias comunes a la carpeta `node_modules` de la raíz para optimizar el espacio.
