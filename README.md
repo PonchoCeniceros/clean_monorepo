@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/PonchoCeniceros/clean_monorepo/blob/main/assets/mern.svg" width="500">
+  <img src="https://github.com/PonchoCeniceros/clean_monorepo/blob/main/.assets/mern.svg" width="500">
 </p>
 
 <p align="center">
